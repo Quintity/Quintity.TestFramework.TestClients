@@ -9,6 +9,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Quintity.TestFramework.Test
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Quintity.TestFramework.TestEngineer.Setup", "Quintity.TestFramework.TestEngineer.Setup\Quintity.TestFramework.TestEngineer.Setup.csproj", "{BBB087D3-F359-4570-BBA5-AFFCCB854DC4}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{A71AC47E-1A75-4663-91FD-4B98861A6391}"
+	ProjectSection(SolutionItems) = preProject
+		AssemblyVersionInfo.cs = AssemblyVersionInfo.cs
+		License.rtf = License.rtf
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU

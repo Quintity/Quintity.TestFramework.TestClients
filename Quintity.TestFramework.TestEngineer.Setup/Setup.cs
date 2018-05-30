@@ -88,7 +88,7 @@ namespace Quintity.TestFramework.TestEngineer.Setup
             );
 
             project.OutDir = $@".\bin\{build}\";
-            project.LicenceFile = @"..\Quintity.Repository\SharedFiles\License.rtf";
+            project.LicenceFile = @"..\License.rtf";
             project.ControlPanelInfo.Manufacturer = "Quintity LLC";
             project.ControlPanelInfo.InstallLocation = "[INSTALLDIR]";
             project.GUID = new Guid("0C4A79D1-AD9B-4FB1-906F-BB3B65DDCF18");

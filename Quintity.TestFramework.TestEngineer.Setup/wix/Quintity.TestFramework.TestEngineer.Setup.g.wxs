@@ -202,7 +202,7 @@
       </Directory>
     </Directory>
 
-    <WixVariable Id="WixUILicenseRtf" Value="..\Quintity.Repository\SharedFiles\License.rtf" />
+    <WixVariable Id="WixUILicenseRtf" Value="..\License.rtf" />
 
     <CustomAction Id="Set_ARPINSTALLLOCATION" Property="ARPINSTALLLOCATION" Value="[INSTALLDIR]" Return="check" Execute="immediate" />
     <CustomAction Id="Set_INSTALLDIR_AbsolutePath" Property="INSTALLDIR" Value="C:\Quintity TestEngineer 3.0" />

@@ -62,7 +62,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="..\Quintity.Repository\SharedFiles\AssemblyVersionInfo.cs">
+    <Compile Include="..\AssemblyVersionInfo.cs">
       <Link>Properties\AssemblyVersionInfo.cs</Link>
     </Compile>
     <Compile Include="CheckedComboBox\CheckedComboBox.cs">

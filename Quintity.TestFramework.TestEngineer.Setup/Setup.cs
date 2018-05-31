@@ -25,16 +25,17 @@ namespace Quintity.TestFramework.TestEngineer.Setup
             //new PropertyRef(new Id("VS2015_ITEMTEMPLATES_DIR")),
             // Create program files folder
             //new Dir(@"%ProgramFiles%\Quintity\Quintity TestEngineer 3.0",
-            new Dir(@"C:\Quintity TestEngineer 3.0",
+            new Dir(@"C:\Quintity TestEngineer 3.5",
 
                     // Add the TestEngineer to folder
                     new File($@"..\Quintity.TestFramework.TestEngineer\bin\{build}\Quintity.TestFramework.TestEngineer.exe",
                         // Add shortcut to program files folder
-                        new FileShortcut("Quintity TestEngineer", @"%ProgramMenu%\Quintity\Quintity TestEngineer 3.0"),
+                        new FileShortcut("Quintity TestEngineer", @"%ProgramMenu%\Quintity\Quintity TestEngineer 3.5"),
                         // Add shortcut to desktop
                         new FileShortcut("Quintity TestEngineer", @"%Desktop%")),
 
                     new File($@"..\Quintity.TestFramework.TestEngineer\bin\{build}\Quintity.TestFramework.Core.dll"),
+                    new File($@"..\Quintity.TestFramework.TestEngineer\bin\{build}\Quintity.TestFramework.Runtime.dll"),
 
                     // Add app config to folder
                     new File($@"..\Quintity.TestFramework.TestEngineer\bin\{build}\Quintity.TestFramework.TestEngineer.exe.Config"),
@@ -71,14 +72,15 @@ namespace Quintity.TestFramework.TestEngineer.Setup
 
                 //  Places QTF Core reference assembly for VS reference.
                 new Dir(@"%ProgramFiles%\Reference Assemblies\Quintity LLC",
-                    new File(new Id("Reference"), $@"..\Quintity.TestFramework.TestEngineer\bin\{build}\Quintity.TestFramework.Core.dll")),
+                    new File(new Id("CoreReference"), $@"..\Quintity.TestFramework.TestEngineer\bin\{build}\Quintity.TestFramework.Core.dll"),
+                    new File(new Id("RuntimeReference"), $@"..\Quintity.TestFramework.TestEngineer\bin\{build}\Quintity.TestFramework.Runtime.dll")),
 
                 // Registry values
                 // Supports loading QTF Core assembly in VS Reference Assembly dialog.
                 new RegValue(RegistryHive.LocalMachine, @"software\WOW6432Node\Microsoft\.NETFramework\v4.0.30319\AssemblyFoldersEx\Quintity TestFramework",
                     string.Empty, @"C:\Program Files (x86)\Reference Assemblies\Quintity LLC"),
 
-                new RegValue(RegistryHive.LocalMachine, "Software\\QuintityLLC\\Quintity TestEngineer", "Version", "3.0.0"),
+                new RegValue(RegistryHive.LocalMachine, "Software\\QuintityLLC\\Quintity TestEngineer", "Version", "3.5.0"),
                 new RegValue(RegistryHive.LocalMachine, "Software\\QuintityLLC\\Quintity TestEngineer", "Path", "[INSTALLDIR]")
 
                 //new Dir(new Id("VS2015_ITEMTEMPLATES_DIR"), "VS2015ItemTemplates",

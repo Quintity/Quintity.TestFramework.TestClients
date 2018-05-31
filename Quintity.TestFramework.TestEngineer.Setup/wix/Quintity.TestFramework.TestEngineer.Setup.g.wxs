@@ -15,7 +15,7 @@
 
         <Component Id="Component.Quintity.TestFramework.TestEngineer.exe" Guid="0c4a79d1-ad9b-4fb1-906f-bb3bdd9a2b8c">
           <File Id="Quintity.TestFramework.TestEngineer.exe" Source="..\Quintity.TestFramework.TestEngineer\bin\Debug\Quintity.TestFramework.TestEngineer.exe">
-            <Shortcut Id="Shortcut.Quintity.TestFramework.TestEngineer.exe.Quintity_TestEngineer" WorkingDirectory="INSTALLDIR" Directory="ProgramMenuFolder.Quintity.Quintity_TestEngineer_3.0" Name="Quintity TestEngineer.lnk" />
+            <Shortcut Id="Shortcut.Quintity.TestFramework.TestEngineer.exe.Quintity_TestEngineer" WorkingDirectory="INSTALLDIR" Directory="ProgramMenuFolder.Quintity.Quintity_TestEngineer_3.5" Name="Quintity TestEngineer.lnk" />
             <Shortcut Id="Shortcut.Quintity.TestFramework.TestEngineer.exe.Quintity_TestEngineer.1" WorkingDirectory="INSTALLDIR" Directory="DesktopFolder" Name="Quintity TestEngineer.lnk" />
           </File>
 
@@ -26,6 +26,10 @@
 
         <Component Id="Component.Quintity.TestFramework.Core.dll" Guid="0c4a79d1-ad9b-4fb1-906f-bb3b54e721f0">
           <File Id="Quintity.TestFramework.Core.dll" Source="..\Quintity.TestFramework.TestEngineer\bin\Debug\Quintity.TestFramework.Core.dll" />
+        </Component>
+
+        <Component Id="Component.Quintity.TestFramework.Runtime.dll" Guid="0c4a79d1-ad9b-4fb1-906f-bb3b1a2c1d33">
+          <File Id="Quintity.TestFramework.Runtime.dll" Source="..\Quintity.TestFramework.TestEngineer\bin\Debug\Quintity.TestFramework.Runtime.dll" />
         </Component>
 
         <Component Id="Component.Quintity.TestFramework.TestEngineer.exe.Config" Guid="0c4a79d1-ad9b-4fb1-906f-bb3b583d3a5b">
@@ -142,7 +146,7 @@
 
         <Component Id="Registry2" Guid="0c4a79d1-ad9b-4fb1-906f-bb3b62e99da3">
           <RegistryKey Root="HKLM" Key="Software\QuintityLLC\Quintity TestEngineer">
-            <RegistryValue Type="string" KeyPath="yes" Value="3.0.0" Name="Version" />
+            <RegistryValue Type="string" KeyPath="yes" Value="3.5.0" Name="Version" />
           </RegistryKey>
         </Component>
 
@@ -158,8 +162,12 @@
         <Directory Id="ProgramFilesFolder.Reference_Assemblies" Name="Reference Assemblies">
           <Directory Id="ProgramFilesFolder.Reference_Assemblies.Quintity_LLC" Name="Quintity LLC">
 
-            <Component Id="Component.Reference" Guid="0c4a79d1-ad9b-4fb1-906f-bb3b3a75a301">
-              <File Id="Reference" Source="..\Quintity.TestFramework.TestEngineer\bin\Debug\Quintity.TestFramework.Core.dll" />
+            <Component Id="Component.CoreReference" Guid="0c4a79d1-ad9b-4fb1-906f-bb3b61b3456e">
+              <File Id="CoreReference" Source="..\Quintity.TestFramework.TestEngineer\bin\Debug\Quintity.TestFramework.Core.dll" />
+            </Component>
+
+            <Component Id="Component.RuntimeReference" Guid="0c4a79d1-ad9b-4fb1-906f-bb3b1a60eb28">
+              <File Id="RuntimeReference" Source="..\Quintity.TestFramework.TestEngineer\bin\Debug\Quintity.TestFramework.Runtime.dll" />
             </Component>
 
           </Directory>
@@ -168,10 +176,10 @@
 
       <Directory Id="ProgramMenuFolder" Name="ProgramMenuFolder">
         <Directory Id="ProgramMenuFolder.Quintity" Name="Quintity">
-          <Directory Id="ProgramMenuFolder.Quintity.Quintity_TestEngineer_3.0" Name="Quintity TestEngineer 3.0">
+          <Directory Id="ProgramMenuFolder.Quintity.Quintity_TestEngineer_3.5" Name="Quintity TestEngineer 3.5">
 
-            <Component Id="Quintity_TestEngineer_3.0.EmptyDirectory" Guid="0c4a79d1-ad9b-4fb1-906f-bb3b587b4d3b">
-              <RemoveFolder Id="ProgramMenuFolder.Quintity.Quintity_TestEngineer_3.0" On="uninstall" />
+            <Component Id="Quintity_TestEngineer_3.5.EmptyDirectory" Guid="0c4a79d1-ad9b-4fb1-906f-bb3b5878021c">
+              <RemoveFolder Id="ProgramMenuFolder.Quintity.Quintity_TestEngineer_3.5" On="uninstall" />
 
               <RegistryKey Root="HKCU" Key="Software\WixSharp\Used">
                 <RegistryValue Value="0" Type="string" KeyPath="yes" />
@@ -205,11 +213,11 @@
     <WixVariable Id="WixUILicenseRtf" Value="..\License.rtf" />
 
     <CustomAction Id="Set_ARPINSTALLLOCATION" Property="ARPINSTALLLOCATION" Value="[INSTALLDIR]" Return="check" Execute="immediate" />
-    <CustomAction Id="Set_INSTALLDIR_AbsolutePath" Property="INSTALLDIR" Value="C:\Quintity TestEngineer 3.0" />
+    <CustomAction Id="Set_INSTALLDIR_AbsolutePath" Property="INSTALLDIR" Value="C:\Quintity TestEngineer 3.5" />
 
     <UIRef Id="WixUI_Mondo" />
 
-    <Property Id="INSTALLDIR_ABSOLUTEPATH" Value="C:\Quintity TestEngineer 3.0" />
+    <Property Id="INSTALLDIR_ABSOLUTEPATH" Value="C:\Quintity TestEngineer 3.5" />
 
     <Feature Id="Working_Folders" Title="Working Folders" Absent="allow" Level="1">
       <ComponentRef Id="TestSuites.EmptyDirectory" />
@@ -226,6 +234,7 @@
     <Feature Id="Complete" Title="Complete" Absent="allow" Level="1">
       <ComponentRef Id="Component.Quintity.TestFramework.TestEngineer.exe" />
       <ComponentRef Id="Component.Quintity.TestFramework.Core.dll" />
+      <ComponentRef Id="Component.Quintity.TestFramework.Runtime.dll" />
       <ComponentRef Id="Component.Quintity.TestFramework.TestEngineer.exe.Config" />
       <ComponentRef Id="Component.Quintity.TestFramework.TestRunner.exe" />
       <ComponentRef Id="Component.Quintity.TestFramework.TestRunner.exe.Config" />
@@ -233,8 +242,9 @@
       <ComponentRef Id="Component.log4net.xml" />
       <ComponentRef Id="Uninstall_TestEngineer" />
       <ComponentRef Id="Quintity_TestEngineer" />
-      <ComponentRef Id="Component.Reference" />
-      <ComponentRef Id="Quintity_TestEngineer_3.0.EmptyDirectory" />
+      <ComponentRef Id="Component.CoreReference" />
+      <ComponentRef Id="Component.RuntimeReference" />
+      <ComponentRef Id="Quintity_TestEngineer_3.5.EmptyDirectory" />
       <ComponentRef Id="DesktopFolder.EmptyDirectory" />
       <ComponentRef Id="Registry1" />
       <ComponentRef Id="Registry2" />

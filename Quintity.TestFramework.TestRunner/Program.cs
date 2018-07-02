@@ -387,14 +387,14 @@ namespace Quintity.TestFramework.TestRunner
             catch (SerializationException)
             {
                 LogEvent.Fatal(
-                    string.Format("Unable to read test listeners \"{0}\".\r\n\r\nPlease verify the file is a valid test properties file.", testListenersFile));
+                    string.Format("Unable to read test listeners \"{0}\".\r\n\r\nPlease verify the file is a valid test listeners file.", testListenersFile));
 
                 exitCode = ExitCode.TestListenersError;
             }
             catch (UriFormatException)
             {
                 LogEvent.Fatal(
-                    string.Format("Unable to read test listeners \"{0}\".\r\n\r\nPlease verify the file is a valid test properties file.", testListenersFile));
+                    string.Format("Unable to read test listeners \"{0}\".\r\n\r\nPlease verify the file is a valid test listeners file.", testListenersFile));
 
                 exitCode = ExitCode.TestListenersError;
             }

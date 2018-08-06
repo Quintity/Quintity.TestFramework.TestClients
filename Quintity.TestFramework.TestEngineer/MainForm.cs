@@ -807,7 +807,7 @@ namespace Quintity.TestFramework.TestEngineer
                 var testSuite = m_testTreeView.GetTestSuite();
 
                 m_saveFileDialog.Title = "Save Test Suite As";
-                m_saveFileDialog.FileName = testSuite.Title;
+                m_saveFileDialog.FileName = $"Copy of {testSuite.Title}";
                 m_saveFileDialog.InitialDirectory = TestProperties.TestSuites;
                 m_saveFileDialog.RestoreDirectory = true;
                 m_saveFileDialog.Filter = "Test suites (*.ste)|*.ste";
@@ -822,6 +822,7 @@ namespace Quintity.TestFramework.TestEngineer
                     //saveTestSuite(testSuite);
                     m_testTreeView.RootNode.TestScriptObject = testSuite;
                     m_testTreeView.RootNode.TestScriptResult = null; 
+
 
                     // Clean up UI
                     m_testSuiteUri = new Uri(TestProperties.ExpandString(testSuite.FilePath));

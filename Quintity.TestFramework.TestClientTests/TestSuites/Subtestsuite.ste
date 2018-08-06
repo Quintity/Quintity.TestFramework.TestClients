@@ -1,17 +1,17 @@
 <?xml version="1.0"?>
 <TestSuite status="Active">
-  <SystemID>6a84ee6a-7190-4750-83c1-9eee9ac1d3b7</SystemID>
+  <SystemID>1592435a-803e-4a7a-85ad-0ce1b9f0b2a7</SystemID>
   <UserID />
-  <Title>TestClientsTests</Title>
+  <Title>Subtestsuite</Title>
   <Author>jmoth</Author>
-  <Created>2018-06-09T08:12:29-07:00</Created>
+  <Created>2018-08-02T07:44:45-07:00</Created>
   <Project />
   <Reference />
   <FunctionalArea />
   <Description><![CDATA[]]></Description>
   <TestProperties />
   <TestPreprocessor>
-    <SystemID>a3a1bd9a-ed25-4bfb-b044-aecad7719a40</SystemID>
+    <SystemID>fffd5df3-fc48-42af-93f6-1eb19c9d967e</SystemID>
     <Title />
     <Description><![CDATA[]]></Description>
     <Description />
@@ -27,7 +27,7 @@
     <OnFailure>Stop</OnFailure>
   </TestPreprocessor>
   <TestPostprocessor>
-    <SystemID>70531128-16f2-4ba5-8b3d-a09ae41763a7</SystemID>
+    <SystemID>5e90f47a-5bb1-4216-9796-144142216389</SystemID>
     <Title />
     <Description><![CDATA[]]></Description>
     <Description />
@@ -44,11 +44,11 @@
   <PostProcess />
   <TestScriptObjects>
     <TestScriptObject type="TestCase" status="Active">
-      <SystemID>7b947ce4-c115-4970-a09a-f8628d0b4ed0</SystemID>
+      <SystemID>29b13c81-dd6f-4477-8f85-587e324b9410</SystemID>
       <UserID />
       <Title>Untitled test case</Title>
       <Author>jmoth</Author>
-      <Created>2018-06-09T08:12:29-07:00</Created>
+      <Created>2018-08-02T07:44:45-07:00</Created>
       <FunctionalArea />
       <Tags />
       <Defects />
@@ -59,7 +59,7 @@
       <TestProperties />
       <TestScriptObjects>
         <TestScriptObject type="TestStep" status="Active" testType="Automated">
-          <SystemID>bb3ab91b-63cc-48df-ba75-f8e5b0e1af84</SystemID>
+          <SystemID>ae137eb8-356a-4c72-a44c-900fe4c92e0a</SystemID>
           <UserID />
           <Title>Untitled test step</Title>
           <ExpectedTestVerdict>Pass</ExpectedTestVerdict>
@@ -68,15 +68,21 @@
           <Description><![CDATA[]]></Description>
           <ExpectedBehaviour><![CDATA[]]></ExpectedBehaviour>
           <TestAutomationDefinition>
-            <TestAssembly>[TestAssemblies]\Quintity.TestFramework.TestClientTests.dll</TestAssembly>
-            <TestClass>Quintity.TestFramework.TestClientTests.TestMethods</TestClass>
-            <TestMethod>DumpProperties</TestMethod>
-            <TestParameters />
+            <TestAssembly>C:\DevProjects\Quintity\Quintity.TestFramework\Quintity.TestFramework - Trunk\Quintity.TestFramework.ListenersService.Test\bin\Debug\Quintity.TestFramework.ListenersService.Tests.dll</TestAssembly>
+            <TestClass>Quintity.TestFramework.ListenersService.Tests.TestMethods</TestClass>
+            <TestMethod>Sleep</TestMethod>
+            <TestParameters>
+              <TestParameter>
+                <DisplayName>millisecondTimeout</DisplayName>
+                <Name>millisecondTimeout</Name>
+                <TypeAsString>System.Int32</TypeAsString>
+                <ValueAsString>1000</ValueAsString>
+              </TestParameter>
+            </TestParameters>
           </TestAutomationDefinition>
         </TestScriptObject>
       </TestScriptObjects>
     </TestScriptObject>
-    <TestScriptObject type="TestSuite">[TestSuites]\Subtestsuite.ste</TestScriptObject>
   </TestScriptObjects>
-  <FilePath>[TestSuites]\TestClientsTests.ste</FilePath>
+  <FilePath>[TestSuites]\Subtestsuite.ste</FilePath>
 </TestSuite>

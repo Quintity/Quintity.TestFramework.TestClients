@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <TestSuite status="Active">
-  <SystemID>6a84ee6a-7190-4750-83c1-9eee9ac1d3b7</SystemID>
+  <SystemID>57b3800f-dbaf-4f0f-9580-b9a76bb42bee</SystemID>
   <UserID />
   <Title>TestClientsTests</Title>
   <Author>jmoth</Author>
@@ -11,7 +11,7 @@
   <Description><![CDATA[]]></Description>
   <TestProperties />
   <TestPreprocessor>
-    <SystemID>a3a1bd9a-ed25-4bfb-b044-aecad7719a40</SystemID>
+    <SystemID>8588b3b2-5d04-49c5-aee1-62c724520ce7</SystemID>
     <Title />
     <Description><![CDATA[]]></Description>
     <Description />
@@ -27,7 +27,7 @@
     <OnFailure>Stop</OnFailure>
   </TestPreprocessor>
   <TestPostprocessor>
-    <SystemID>70531128-16f2-4ba5-8b3d-a09ae41763a7</SystemID>
+    <SystemID>9a312ec5-de8f-4a77-8974-012179dc9864</SystemID>
     <Title />
     <Description><![CDATA[]]></Description>
     <Description />
@@ -44,7 +44,7 @@
   <PostProcess />
   <TestScriptObjects>
     <TestScriptObject type="TestCase" status="Active">
-      <SystemID>7b947ce4-c115-4970-a09a-f8628d0b4ed0</SystemID>
+      <SystemID>30caf3ca-11e4-48f1-b7a3-c3df82fd0fe5</SystemID>
       <UserID />
       <Title>Untitled test case</Title>
       <Author>jmoth</Author>
@@ -59,7 +59,7 @@
       <TestProperties />
       <TestScriptObjects>
         <TestScriptObject type="TestStep" status="Active" testType="Automated">
-          <SystemID>bb3ab91b-63cc-48df-ba75-f8e5b0e1af84</SystemID>
+          <SystemID>c018bdd4-2f39-4d3b-ae44-0bc9c1251584</SystemID>
           <UserID />
           <Title>Untitled test step</Title>
           <ExpectedTestVerdict>Pass</ExpectedTestVerdict>
@@ -78,5 +78,5 @@
     </TestScriptObject>
     <TestScriptObject type="TestSuite">[TestSuites]\Subtestsuite.ste</TestScriptObject>
   </TestScriptObjects>
-  <FilePath>[TestSuites]\TestClientsTests.ste</FilePath>
+  <FilePath>[TestSuites]\Copy of TestClientsTests.ste</FilePath>
 </TestSuite>

@@ -48,7 +48,6 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="TestConfigs\" />
     <Folder Include="TestData\" />
     <Folder Include="TestOutput\" />
     <Folder Include="TestResults\" />
@@ -56,6 +55,12 @@
   <ItemGroup>
     <None Include="TestProperties\TestClientsTests.props" />
     <None Include="TestSuites\TestClientsTests.ste" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="TestConfigs\TestListeners.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

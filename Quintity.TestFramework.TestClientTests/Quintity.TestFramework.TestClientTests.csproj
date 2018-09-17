@@ -30,9 +30,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Quintity.TestFramework.Core, Version=3.5.6724.20059, Culture=neutral, processorArchitecture=MSIL">
+    <Reference Include="Quintity.TestFramework.Core, Version=3.5.6833.25634, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\Quintity.TestFramework.TestEngineer\bin\Debug\Quintity.TestFramework.Core.dll</HintPath>
+      <HintPath>..\..\Quintity.TestFramework\Quintity.TestFramework.Runtime\bin\Debug\Quintity.TestFramework.Core.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />

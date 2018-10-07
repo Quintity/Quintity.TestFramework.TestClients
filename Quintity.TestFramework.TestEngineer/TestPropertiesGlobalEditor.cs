@@ -2,7 +2,6 @@
 using System.Linq;
 using System.Windows.Forms;
 using Quintity.TestFramework.Core;
-using Quintity.TestFramework.Core.Exceptions;
 
 namespace Quintity.TestFramework.TestEngineer
 {

@@ -13,6 +13,7 @@ using System.Runtime.Serialization;
 using Quintity.TestFramework.Core;
 using Quintity.TestFramework.Runtime;
 using System.Linq;
+using Quintity.TestFramework.Core.Exceptions;
 
 namespace Quintity.TestFramework.TestEngineer
 {

@@ -870,10 +870,20 @@ namespace Quintity.TestFramework.TestEngineer
             return testMethodAttribute;
         }
 
+        private string getTestMethodAlias()
+        {
+            return getTestMethodAlias((MethodInfo)m_testAssemblytreeView.SelectedNode.Tag);
+        }
+
         private string getTestMethodAlias(MethodInfo method)
         {
             TestMethodAttribute attribute = getTestMethodAttribute(method);
             return attribute != null && attribute.Alias != null ? attribute.Alias : method.Name;
+        }
+
+        private string getTestMethodDescription()
+        {
+            return getTestMethodDescription((MethodInfo)m_testAssemblytreeView.SelectedNode.Tag);
         }
 
         private string getTestMethodDescription(MethodInfo method)
@@ -996,8 +1006,9 @@ namespace Quintity.TestFramework.TestEngineer
             }
             else if (m_testScriptObject is TestStep)
             {
-                m_testScriptObject.Title = m_titleText.Text;
-                m_testScriptObject.Description = m_descText.Text;
+                m_testScriptObject.Title = m_titleText.Text.Equals("Untitled test step") ? getTestMethodAlias() : m_titleText.Text;
+                m_testScriptObject.Description = string.IsNullOrEmpty(m_descText.Text) ? getTestMethodDescription() : m_descText.Text;
+
                 ((TestStep)m_testScriptObject).ExpectedBehavior = m_expectedText.Text;
                 m_testScriptObject.Status = m_activatecheckBox.Checked ? Status.Active : Status.Inactive;
 

@@ -59,7 +59,7 @@
       <TestProperties />
       <TestScriptObjects>
         <TestScriptObject type="TestStep" status="Active" testType="Automated">
-          <SystemID>ae137eb8-356a-4c72-a44c-900fe4c92e0a</SystemID>
+          <SystemID>1a821875-9d15-4567-b529-0febe55a1015</SystemID>
           <UserID />
           <Title>Untitled test step</Title>
           <ExpectedTestVerdict>Pass</ExpectedTestVerdict>
@@ -68,17 +68,26 @@
           <Description><![CDATA[]]></Description>
           <ExpectedBehaviour><![CDATA[]]></ExpectedBehaviour>
           <TestAutomationDefinition>
-            <TestAssembly>C:\DevProjects\Quintity\Quintity.TestFramework\Quintity.TestFramework - Trunk\Quintity.TestFramework.ListenersService.Test\bin\Debug\Quintity.TestFramework.ListenersService.Tests.dll</TestAssembly>
-            <TestClass>Quintity.TestFramework.ListenersService.Tests.TestMethods</TestClass>
-            <TestMethod>Sleep</TestMethod>
-            <TestParameters>
-              <TestParameter>
-                <DisplayName>millisecondTimeout</DisplayName>
-                <Name>millisecondTimeout</Name>
-                <TypeAsString>System.Int32</TypeAsString>
-                <ValueAsString>1000</ValueAsString>
-              </TestParameter>
-            </TestParameters>
+            <TestAssembly>[TestAssemblies]\Quintity.TestFramework.TestClientTests.dll</TestAssembly>
+            <TestClass>Quintity.TestFramework.TestClientTests.TestMethods</TestClass>
+            <TestMethod>SimpleTest</TestMethod>
+            <TestParameters />
+          </TestAutomationDefinition>
+        </TestScriptObject>
+        <TestScriptObject type="TestStep" status="Active" testType="Automated">
+          <SystemID>ae137eb8-356a-4c72-a44c-900fe4c92e0a</SystemID>
+          <UserID />
+          <Title>This is a simple test</Title>
+          <ExpectedTestVerdict>Pass</ExpectedTestVerdict>
+          <AlwaysExecute>False</AlwaysExecute>
+          <Iterations>1</Iterations>
+          <Description><![CDATA[This is the description]]></Description>
+          <ExpectedBehaviour><![CDATA[]]></ExpectedBehaviour>
+          <TestAutomationDefinition>
+            <TestAssembly>[TestAssemblies]\Quintity.TestFramework.TestClientTests.dll</TestAssembly>
+            <TestClass>Quintity.TestFramework.TestClientTests.TestMethods</TestClass>
+            <TestMethod>SimpleTest</TestMethod>
+            <TestParameters />
           </TestAutomationDefinition>
         </TestScriptObject>
       </TestScriptObjects>

@@ -9,7 +9,7 @@ namespace Quintity.TestFramework.TestClientTests
     {
         #region TestMethods
 
-        [TestMethod]
+        [TestMethod("This is a simple test", "This is the description")]
         public TestVerdict SimpleTest()
         {
             try

@@ -15,17 +15,20 @@ namespace Quintity.TestFramework.TestClientTests
             try
             {
                 Setup();
+
+                throw new Exception("This is a big deal.");
             }
             catch( Exception e)
             {
-                
+                TestMessage += e.ToString();
+                TestVerdict = TestVerdict.Error;
             }
             finally
             {
                 Teardown();
             }
 
-            return TestVerdict;
+            return TestVerdict.Fail;
         }
 
         #endregion

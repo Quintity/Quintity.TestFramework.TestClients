@@ -15,13 +15,13 @@
     <Title />
     <Description><![CDATA[]]></Description>
     <Description />
-    <Status>Incomplete</Status>
+    <Status>Active</Status>
     <IgnoreResult>False</IgnoreResult>
     <TestType>Automated</TestType>
     <TestAutomationDefinition>
-      <TestAssembly />
-      <TestClass />
-      <TestMethod />
+      <TestAssembly>[TestAssemblies]\Quintity.TestFramework.TestClientTests.dll</TestAssembly>
+      <TestClass>Quintity.TestFramework.TestClientTests.TestMethods</TestClass>
+      <TestMethod>SimpleTest</TestMethod>
       <TestParameters />
     </TestAutomationDefinition>
     <OnFailure>Stop</OnFailure>
